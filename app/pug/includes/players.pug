@@ -1,0 +1,17 @@
+section.players#playersSection
+    .logo
+        a(href="")
+            img(src="img/logo-main.png", alt="logo")
+    .playersForm.form
+        h2 Выберите количество игроков
+        .players__formCounter
+            .square#numberOfPlayers 2
+            .circle
+                .circle__item#playerUp &and;
+                .circle__item#playerDown &or;
+                .message.message__max#message__max Максимальное количество игроков: 8
+                .message.message__min#message__min Минимальное количество игроков: 2
+        .form__buttons
+            .button__back.button#playersExit <span>&#x27F5;</span>Назад
+            .button__further.button#playersFurther Далее <span>&#x27F6;</span>
+    include ./footer.pug

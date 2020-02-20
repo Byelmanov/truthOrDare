@@ -1,0 +1,36 @@
+section.names#namesSection
+    .logo
+        a(href="")
+            img(src="img/logo-main.png", alt="logo")
+    .form
+        h2 Введите имена игроков
+        .names__field
+            .names__fieldItem.names__fieldItem1
+                .circle__item 1
+                input(type="text", placeholder="Игрок 1", required, autofocus, id="nameInput1")
+            .names__fieldItem.names__fieldItem2
+                .circle__item 2
+                input(type="text", placeholder="Игрок 2", required, id="nameInput2")
+            .names__fieldItem#names__fieldItem3
+                .circle__item 3
+                input(type="text", placeholder="Игрок 3", required, id="nameInput3")
+            .names__fieldItem#names__fieldItem4
+                .circle__item 4
+                input(type="text", placeholder="Игрок 4", required, id="nameInput4")
+            .names__fieldItem#names__fieldItem5
+                .circle__item 5
+                input(type="text", placeholder="Игрок 5", required, id="nameInput5")
+            .names__fieldItem#names__fieldItem6
+                .circle__item 6
+                input(type="text", placeholder="Игрок 6", required, id="nameInput6")
+            .names__fieldItem#names__fieldItem7
+                .circle__item 7
+                input(type="text", placeholder="Игрок 7", required, id="nameInput7")
+            .names__fieldItem#names__fieldItem8
+                .circle__item 8
+                input(type="text", placeholder="Игрок 8", required, id="nameInput8")
+            .form__buttons
+                .button__back.button#nameExit <span>&#x27F5;</span>Назад
+                .button__further.button#namesFurther Далее <span>&#x27F6;</span>
+                .button__error#namesError Заполните все поля
+    include ./footer.pug
